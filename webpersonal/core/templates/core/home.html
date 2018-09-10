@@ -1,0 +1,44 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+
+<!-- Cabecera -->
+<section class="page-section clearfix">
+  <div class="container">
+    <div class="intro">
+      <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'core/img/bicin.jpg' %}" alt="">
+      <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+        <h2 class="section-heading mb-4">
+          <span class="section-heading-lower">Galeria</span>
+        </h2>
+        <p class="mb-3">bicicletas de la mayor tecnologia. no esperes más.
+        </p>
+        <div class="intro-button mx-auto">
+          <a class="btn btn-primary btn-xl" href="{% url 'services' %}">Conoce nuestro modelo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mensaje -->
+<section class="page-section cta">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-9 mx-auto">
+        <div class="cta-inner text-center rounded">
+          <h2 class="section-heading mb-4">
+            <span class="section-heading-upper">Calidad </span>
+            <span class="section-heading-lower">Garantizada</span>
+          </h2>
+          <p align="justify">Las bicicletas eléctricas no están aquí solo para ayudarlo a subir colinas empinadas. Los motores eléctricos se abren paso en todos los segmentos de bicicletas, scooters y motocicletas..</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
